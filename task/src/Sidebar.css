@@ -1,0 +1,35 @@
+.container {
+    position: absolute;
+    width: 15%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+}
+
+/* logo position has to adjust*/
+.container__logo {
+    padding: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.container__logo > img {
+    width: 90%;
+}
+
+.container__sidebar--content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 40px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container__sidebar--content:hover {
+    background-color: #17C506;
+    color: #FFFFFF;
+}
