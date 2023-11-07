@@ -1,0 +1,30 @@
+.navbar {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 80px;
+}
+
+.navbar__contents {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__searchbox{
+    height: 30px;
+    width: 200px;
+    background-color: #F9F5F5;
+    background-image: url('search-icon.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: -1;
+}
+

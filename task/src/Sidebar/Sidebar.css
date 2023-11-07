@@ -5,6 +5,7 @@
     background-color: #FFFFFF;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 /* logo position has to adjust*/
@@ -24,7 +25,7 @@
     align-items: center;
     padding-left: 40px;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
 }
