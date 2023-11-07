@@ -16,7 +16,7 @@ function BarChart() {
     const xScale = d3.scaleBand()
         .domain(data.map((val, i) => i))
         .range([0, w])
-        .padding(0.5);
+        .padding(0.8);
 
     const yScale = d3.scaleLinear()
           .domain([0, h])
@@ -28,7 +28,11 @@ function BarChart() {
       .attr('x', (v, i) => xScale(i))
       .attr('y', yScale)
       .attr('width', xScale.bandwidth())
-      .attr('height', val => h - yScale(val));
+      .attr('height', val => h - yScale(val))
+      .attr('fill', 'green')
+      .attr('stroke', 'green')
+      .attr('rx', 3)
+      .attr('ry', 3);
   }, [data]);
   return (
     <div>
