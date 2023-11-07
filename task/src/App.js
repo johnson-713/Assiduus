@@ -1,4 +1,5 @@
 import './App.css';
+import Account from './Charts/Account';
 import Navbar from './Navbar/Navbar';
 import Sidebar from './Sidebar/Sidebar';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Sidebar />
+      <Account />
     </div>
   );
 }
