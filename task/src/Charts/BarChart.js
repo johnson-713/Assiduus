@@ -2,7 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 
 function BarChart() {
-  const [data] = useState([20, 40, 80, 50, 60, 40]);
+  const [data] = useState([
+                      {label: 'Older', value: 20},
+                      {label: 'Jan 01-08', value: 40},
+                      {label: 'Jan 09-16', value: 80},
+                      {label: 'Jan 17-24', value: 50},
+                      {label: 'Jan 25-31', value: 60},
+                      {label: 'Future', value: 40},]);
   const svgRef = useRef();
 
   useEffect(() => {
