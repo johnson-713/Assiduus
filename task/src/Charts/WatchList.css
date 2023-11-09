@@ -1,0 +1,10 @@
+.list {
+    background-color: #FFFFFF;
+    width: 35%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.body {
+    padding: 10px;
+}
