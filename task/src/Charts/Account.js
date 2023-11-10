@@ -49,7 +49,7 @@ function Account() {
   ];
 
   const width = 500;
-  const height = 150;
+  const height = 100;
   const padding = 20;
   const maxValue = 100; // Maximum data value
 

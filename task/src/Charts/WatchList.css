@@ -1,10 +1,11 @@
 .list {
     background-color: #FFFFFF;
-    width: 35%;
-    height: 300px;
+    width: 45%;
+    height: 250px;
     border-radius: 10px;
 }
 
 .body {
     padding: 10px;
+    font-size: 10px;
 }

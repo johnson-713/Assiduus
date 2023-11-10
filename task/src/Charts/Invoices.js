@@ -15,7 +15,7 @@ function Invoices() {
 
   useEffect(() => {
     const width = 500;
-  const height = 150;
+  const height = 100;
 
   const svg = d3.select(svgRef.current);
 

@@ -1,15 +1,23 @@
 .navbar {
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFFFFF;
-    height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 40px;
+        z-index: 100;
+        background-color: #FFFFFF;
 }
 
-.navbar__contents {
+.navbar__logo {
+    height: 60px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+.navbar__right {
     display: flex;
     gap: 20px;
 }

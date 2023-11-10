@@ -1,20 +1,22 @@
 import './App.css';
-import Account from './Charts/Account';
-import CashFlow from './Charts/CashFlow';
-import Invoices from './Charts/Invoices';
-import WatchList from './Charts/WatchList';
+import Cards from './Cards/Cards';
 import Navbar from './Navbar/Navbar';
 import Sidebar from './Sidebar/Sidebar';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Sidebar />
-      <Account />
-      <Invoices />
-      <CashFlow />
-      <WatchList />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<div className='app__page'>
+            <Sidebar />
+            <Cards />
+          </div>}>
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
