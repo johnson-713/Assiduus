@@ -1,9 +1,9 @@
 .account {
     background-color: #FFFFFF;
-    width: 45%;
-    height: 250px;
-    position: relative;
+    width: 48%;
+    height: 285px;
     border-radius: 10px;
+
 }
 
 .header {
@@ -17,7 +17,6 @@
     font-size: 15px;
     font-family: sans-serif;
     font-weight: 700;
-    /* padding: 12px; */
     margin-left: 20px;
     margin-top: 20px;
 }
@@ -31,7 +30,6 @@ button {
     background-color: #FFFFFF;
     border: 2px solid #F9F5F5;
     border-radius: 5px;
-    width: 100px;
     margin-top: 15px;
     margin-right: 10px;
 }
@@ -39,7 +37,9 @@ button {
 .buttons__inner {
     display: flex;
     justify-content: space-between;
+    width: 50%;
     align-items: center;
+    font-size: 10px;
 }
 
 

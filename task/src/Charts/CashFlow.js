@@ -15,7 +15,7 @@ function CashFlow() {
 
   useEffect(() => {
     const width = 500;
-  const height = 100;
+  const height = 130;
 
   const svg = d3.select(svgRef.current);
 

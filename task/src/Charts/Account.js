@@ -4,7 +4,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./Account.css";
 
 function Account() {
-  const icon = <KeyboardArrowDownIcon style={{ width: 20 }} />;
+  const icon = <KeyboardArrowDownIcon style={{ width: 10 }} />;
   const initialData = [
     {
       name: "09",
@@ -49,7 +49,7 @@ function Account() {
   ];
 
   const width = 500;
-  const height = 100;
+  const height = 130;
   const padding = 20;
   const maxValue = 100; // Maximum data value
 
