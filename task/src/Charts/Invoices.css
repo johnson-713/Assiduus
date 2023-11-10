@@ -16,3 +16,21 @@ button {
     margin-right: 10px;
     height: 30px;
 }
+
+@media only screen and (max-width: 600px){
+    .invoices {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 601px){
+    .invoices {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .invoices {
+        width: 48%;
+    }
+}

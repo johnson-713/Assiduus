@@ -10,3 +10,21 @@
     font-size: 12px;
     font-weight: 700;
 }
+
+@media only screen and (max-width: 600px){
+    .list {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 601px){
+    .list {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .list {
+        width: 48%;
+    }
+}
