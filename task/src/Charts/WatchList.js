@@ -18,9 +18,9 @@ function WatchList() {
       <table style={{ borderCollapse: 'collapse', width: '100%' }}>
       <thead>
         <tr>
-          <th style={{ border: 'none', padding: '8px', textAlign: 'left', width: '60%', color: 'lightGray' }}>Account</th>
-          <th style={{ border: 'none', padding: '8px', textAlign: 'left', width: '20%', color: 'lightGray' }}>This Month</th>
-          <th style={{ border: 'none', padding: '8px', textAlign: 'left', width: '20%', color: 'lightGray' }}>YTD</th>
+          <th style={{ border: 'none', padding: '8px', textAlign: 'left', width: '60%', color: '#E7E5E5' }}>Account</th>
+          <th style={{ border: 'none', padding: '8px', textAlign: 'left', width: '20%', color: '#E7E5E5' }}>This Month</th>
+          <th style={{ border: 'none', padding: '8px', textAlign: 'left', width: '20%', color: '#E7E5E5' }}>YTD</th>
         </tr>
       </thead>
       <tbody>

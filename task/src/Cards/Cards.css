@@ -1,16 +1,16 @@
 .cards {
-    background-color: #e1e4e6;
+    background-color: #E7E5E5;
     flex: 0.85;
     padding: 40px 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px){
     .cards {
         flex: 0.95;
-        /* padding: 10px 10px; */
     }
 }
 

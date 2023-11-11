@@ -16,15 +16,15 @@ function Account() {
     },
     {
       name: "11",
-      value: 85,
+      value: 95,
     },
     {
       name: "12",
-      value: 75,
+      value: 65,
     },
     {
       name: "13",
-      value: 45,
+      value: 30,
     },
     {
       name: "14",
@@ -36,11 +36,11 @@ function Account() {
     },
     {
       name: "16",
-      value: 58,
+      value: 35,
     },
     {
       name: "17",
-      value: 35,
+      value: 45,
     },
     {
       name: "18",
@@ -110,8 +110,9 @@ function Account() {
       .append("g")
       .attr("transform", `translate(0,${height - padding})`)
       .attr("id", "xaxis")
-      .attr("color", "lightGray")
+      .attr("color", "#E7E5E5")
       .style('font-size', '10px')
+      .style('font-weight', 'bold')
       .call(xAxis);
 
   }, [chartdata]);

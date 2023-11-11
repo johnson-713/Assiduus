@@ -6,16 +6,29 @@ import PersonIcon from '@mui/icons-material/Person';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import './Sidebar.css';
 import SidebarRow from './SidebarRow';
+import {  Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
+            <Link to="/" style={{textDecoration: "none", color: "#000"}}>
             <SidebarRow Icon={DashboardIcon} title='Dashboard' />
-            <SidebarRow Icon={AccountBalanceWalletIcon} title='Accounts' />
-            <SidebarRow Icon={AttachMoneyIcon} title='Payroll' />
-            <SidebarRow Icon={DescriptionIcon} title='Reports' />
-            <SidebarRow Icon={PersonIcon} title='Advisor' />
-            <SidebarRow Icon={ContactsIcon} title='Contacts' />
+            </Link>
+            <Link to="/" style={{textDecoration: "none", color: "#000"}}>
+            <SidebarRow Icon={AccountBalanceWalletIcon} title='Accounts' />   
+            </Link>
+            <Link to="/" style={{textDecoration: "none", color: "#000"}}>
+            <SidebarRow Icon={AttachMoneyIcon} title='Payroll' />    
+            </Link>
+            <Link to="/" style={{textDecoration: "none", color: "#000"}}>
+            <SidebarRow Icon={DescriptionIcon} title='Reports' />   
+            </Link>
+            <Link to="/" style={{textDecoration: "none", color: "#000"}}>
+            <SidebarRow Icon={PersonIcon} title='Advisor' />    
+            </Link>
+            <Link to="/" style={{textDecoration: "none", color: "#000"}}>
+            <SidebarRow Icon={ContactsIcon} title='Contacts' />   
+            </Link>    
         </div>
     )
 }

@@ -1,8 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import "./Invoices.css";
+import Modal from "./Modal";
 
 function Invoices() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
   const [data] = useState([
     { name: "Older", value: 20 },
     { name: "Jan 01-08", value: 40 },
@@ -43,11 +53,11 @@ function Invoices() {
     .text(d => d.name)
     .attr('x', d => xScale(d.name) + xScale.bandwidth() / 2)
     .attr('y', height)
-    .attr('dy', '1.5em')
+    .attr('dy', '1.9em')
     .attr('text-anchor', 'middle')
     .style('font-size', '12px')
     .style('font-weight', 'bold')
-    .attr('fill', 'lightGray')
+    .attr('fill', '#E7E5E5')
 
   }, [data]);
   return (
@@ -55,7 +65,18 @@ function Invoices() {
       <div className="header">
         <h3>Invoices owed to you</h3>
         <div className="button">
-          <button style={{ color: '#00E27C', backgroundColor: '#F9F5F5', width: 150, fontWeight: 'bold'}}>New Sales Invoice</button>
+          <button 
+          onClick={openModal}
+          style={{ 
+            color: '#00E27C', 
+            backgroundColor: '#F9F5F5', 
+            width: 150, 
+            fontWeight: 'bold'}}>
+              New Sales Invoice
+          </button>
+          <Modal isOpen={isModalOpen} onClose={closeModal}>
+            <input type="file" />
+          </Modal>
         </div>
       </div>
       <div>

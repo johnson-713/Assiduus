@@ -2,6 +2,12 @@
     background-color: #FFFFFF;
     flex: 0.15;
     margin-top: 30px;
+    text-decoration: none;
+}
+
+Link:visited {
+    text-decoration: none;
+
 }
 
 @media only screen and (max-width: 600px){

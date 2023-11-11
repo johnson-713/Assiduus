@@ -57,11 +57,11 @@ function CashFlow() {
     .text(d => d.name)
     .attr('x', d => xScale(d.name) + xScale.bandwidth() / 2)
     .attr('y', height)
-    .attr('dy', '1.5em')
+    .attr('dy', '1.9em')
     .attr('text-anchor', 'middle')
     .style('font-size', '12px')
     .style('font-weight', 'bold')
-    .attr('fill', 'lightGray')
+    .attr('fill', '#E7E5E5')
 
   }, [data]);
   return (
